@@ -1,6 +1,6 @@
 # Graphics w/ glew,glm & SDL
-Essentially me trying to learn how to use OpenGL using glew,glm and SDL
-includes all copying and linking of header files and libraries premade.
+Essentially me trying to learn how to use OpenGL using glew,glm and SDL.
+This includes all copying and linking of header files and libraries premade.
 
 
 the Display class, for example, is thus:
