@@ -3,15 +3,21 @@
 #include <iostream>
 #include <GL/glew.h>
 #include "Display.h"
+#include "mesh.h"
 
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+    
 	Display display(800, 600, "Shriram's Window");
-		while (!display.isoff())
+	Vertex vertices[] = { Vertex(glm::vec3(-0.5,-0.5,0)),
+						  Vertex(glm::vec3(0,0.5,0)),
+						  Vertex(glm::vec3(0.5,-0.5,0)) };
+	Mesh mesh(vertices, sizeof(vertices) / sizeof(vertices[0]));
+	while (!display.isoff())
 		{
 			display.Clear(0.2f, 0.5f, 0.4f,1.0f);
+			mesh.Draw();
 			display.update();
 		}
 		return 0;
