@@ -11,7 +11,7 @@ int main()
 {
     
 	Display display(800, 600, "Shriram's Window");
-	Shader shader("C:\Dev\Graphics\res\basicShader");
+	//Shader shader("C:\Dev\Graphics\res\basicShader");
 	Vertex vertices[] = { Vertex(glm::vec3(-0.5,-0.5,0)),
 						  Vertex(glm::vec3(0,0.5,0)),
 						  Vertex(glm::vec3(0.5,-0.5,0)) };
@@ -19,7 +19,7 @@ int main()
 	while (!display.isoff())
 		{
 			display.Clear(0.2f, 0.5f, 0.4f,1.0f);
-			shader.Bind();
+			//shader.Bind();
 			mesh.Draw();
 			display.update();
 		}
